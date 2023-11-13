@@ -1,4 +1,5 @@
 import './style.css'
+import { Link } from "react-router-dom"
 
 var ButtonSort = () => {
     return <button className="buttonSort"><i class="fa-solid fa-arrow-down-a-z"></i></button>
@@ -12,7 +13,7 @@ export default function SearchBar() {
             <div className="searchContainer">
                 <ButtonSort />
                 <input type="text" className="searchBar"></input>
-                <ButtonAdd />
+                <Link to="/add"><ButtonAdd /></Link>
             </div>
         </>
     )

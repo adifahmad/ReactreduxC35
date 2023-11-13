@@ -1,17 +1,25 @@
+import User from './components/User';
 import './App.css';
-import UseritemContainer from './components/UserItemContainer';
-import SearchBar from './components/searchBar';
-import { BrowserRouter as Router, Routes, Route, Outlet, Link } from "react-router-dom"
+import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom"
+import Add from './components/Add';
 
 function App() {
   return (
     <>
-    <div>
-      <SearchBar />
-      <UseritemContainer />
-    </div>
+      <div>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Outlet />}>
+              <Route index element={<User />} />
+              <Route path="/add" element={<Add />}></Route>
+            </Route>
+          </Routes>
+        </Router>
+      </div>
     </>
   );
 }
+
+
 
 export default App;
