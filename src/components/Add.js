@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './style.css'
 import { Link, useNavigate } from "react-router-dom"
+import { useDispatch  } from 'react-redux'
+import { addUser } from '../actions/users'
 import axios from 'axios'
 
 function ButtonSave(){
@@ -12,24 +14,21 @@ function ButtonCancel(){
 }
 
 export default function Add(){
-    let navigate = useNavigate()
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
 
     const [user, setUser] = useState({name:'', phone:''})
 
-    const addData = (e) => {
+    const AddData = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:3001/api/phonebook', {
-            ...user
-        }).then((data) => {
-            console.log(data)
+        dispatch(addUser(user))
             navigate('/')
-        })
-    }
+        }
 
     return( 
     <>
     <div className='addContainer'> 
-        <form onSubmit={addData}>
+        <form onSubmit={AddData}>
         <input className="inputAdd" type="text" onChange={(e) => setUser({...user, name: e.target.value})}></input>
         <input className="inputAdd" type="text" onChange={(e) => setUser({...user, phone: e.target.value})}></input>
         <div className='addButtonContainer'>

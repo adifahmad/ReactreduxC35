@@ -6,8 +6,9 @@ import reportWebVitals from './reportWebVitals';
 import { legacy_createStore, applyMiddleware } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk'
+import rootReducer from '../src/reducers'
 
-const store = legacy_createStore()
+const store = legacy_createStore(rootReducer, applyMiddleware(thunk))
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

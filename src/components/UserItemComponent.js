@@ -1,6 +1,9 @@
 import './style.css'
 import axios from 'axios'
+import { useSelector,useDispatch } from 'react-redux'
 import { useEffect, useState } from 'react'
+import { removeUser } from '../actions/users'
+import { loadUser } from "../actions/users"
 
 function AvatarImage({ photos }) {
     return <img src={photos == null ? `/usertie.png` : `/${photos}`} alt="logo" className="Avatar" />
@@ -17,17 +20,13 @@ function ButtonDelete({ remove }) {
 
 export default function UserItemComponent() {
 
-    const [item, setItem] = useState([])
+    const item = useSelector(state => state.users)
+    const dispatch = useDispatch()
 
     useEffect(() => {
-        axios.get('http://localhost:3001/api/phonebook').then(({ data }) => setItem(data)).catch(err => console.log(err))
-    }, [setItem])
+        dispatch(loadUser())
+    }, [dispatch])
 
-    const deleteData = (id) => {
-        axios.delete(`http://localhost:3001/api/phonebook/${id}`).then(({ data }) => {
-            setItem(item.filter(item => item.id !== id))
-        }).catch(err => console.log(err))
-    }
 
     const result = []
 
@@ -48,7 +47,7 @@ export default function UserItemComponent() {
                                     <div className='formButtonEdit'>
                                     <ButtonEdit />
                                     </div>
-                                    <ButtonDelete remove={()=>deleteData(user.id)} />
+                                    <ButtonDelete remove={() => dispatch(removeUser( user.id ))} />
                                 </div>
                             </div>
                             {result}
