@@ -15,6 +15,11 @@ export const loadUser = () => dispatch => axios.get('http://localhost:3001/api/p
     dispatch(loadUserFailed())
 })
 
+export const updateUserDraw = (allItem) => ({
+    type: 'UPDATE_USER',
+    allItem
+})
+
 export const addUserFailed = () => ({
     type: 'ADD_USER_FAILED'
 })
@@ -43,6 +48,17 @@ export const removeUser = (id) => dispatch => {
         dispatch({type: 'REMOVE_USER_SUCCESS', id})
     }).catch((err) => {
         dispatch({type: 'REMOVE_USER_FAILED'})
+        console.log(err)
+    })
+}
+
+export const updateUser = ({id, name, phone}) => dispatch => {
+    dispatch(updateUserDraw())
+    console.log(name, phone)
+    return axios.put(`http://localhost:3001/api/phonebook/${id}`, {name, phone}).then(({ data }) => {
+        dispatch({type: 'UPDATE_USER_SUCCESS', id, name, phone})
+    }).catch((err) => {
+        dispatch({type: 'UPDATE_USER_FAILED'})
         console.log(err)
     })
 }
