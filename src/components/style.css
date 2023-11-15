@@ -8,7 +8,7 @@
 .itemContainer{
     background-color: #d4d1d1;
     margin: 10px;
-    padding: 20px;
+    padding: 10px;
     border: solid 2px black;
     border-radius: 8px;
     width: 20%;
@@ -79,4 +79,17 @@
 
 .formButtonEdit{
     margin-right: 5px;
+}
+
+.formInputName{
+    margin-top: 10px;
+    padding: 4px;
+    width: 95%;
+}
+
+.formInputPhone{
+    margin-top: 10px;
+    padding: 4px;
+    width: 95%;
+    margin-bottom: 5px;
 }
