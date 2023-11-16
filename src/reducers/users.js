@@ -10,7 +10,6 @@ const users = (state = [], action) => {
             return state.filter(item => item.id !== action.id)
 
         case 'UPDATE_USER_SUCCESS' :
-            console.log(action)
             return [...state.filter(data => data.id !== action.id), {id : action.id, name : action.name, phone : action.phone}]
 
         case 'REMOVE_USER_FAILED' :

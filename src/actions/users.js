@@ -9,7 +9,7 @@ export const loadUserSuccess = (item) => ({
     item
 })
 
-export const loadUser = () => dispatch => axios.get('http://localhost:3001/api/phonebook').then(({ data }) => {
+export const loadUser = ({keyword = ""}) => dispatch => axios.get('http://localhost:3001/api/phonebook', {params: {keyword}}).then(({ data }) => {
     dispatch(loadUserSuccess(data))
 }).catch((err) => {
     dispatch(loadUserFailed())
