@@ -12,6 +12,9 @@ const users = (state = [], action) => {
         case 'UPDATE_USER_SUCCESS' :
             return [...state.filter(data => data.id !== action.id), {id : action.id, name : action.name, phone : action.phone}]
 
+        case 'UPDATE_AVATAR_SUCCESS' :
+            return [...state.filter(data => data.id !== action.id), {id : action.id, avatar : action.avatar}]
+
         case 'REMOVE_USER_FAILED' :
 
         case 'LOAD_USER_FAILED' :

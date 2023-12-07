@@ -20,6 +20,11 @@ export const updateUserDraw = (allItem) => ({
     allItem
 })
 
+export const updateAvatarDraw = (profile) => ({
+    type: 'UPDATE_AVATAR',
+    profile
+})
+
 export const addUserFailed = () => ({
     type: 'ADD_USER_FAILED'
 })
@@ -48,17 +53,27 @@ export const removeUser = (id) => dispatch => {
         dispatch({type: 'REMOVE_USER_SUCCESS', id})
     }).catch((err) => {
         dispatch({type: 'REMOVE_USER_FAILED'})
-        console.log(err)
     })
 }
 
 export const updateUser = ({id, name, phone}) => dispatch => {
     dispatch(updateUserDraw())
-    console.log(name, phone)
     return axios.put(`http://localhost:3001/api/phonebook/${id}`, {name, phone}).then(({ data }) => {
         dispatch({type: 'UPDATE_USER_SUCCESS', id, name, phone})
     }).catch((err) => {
         dispatch({type: 'UPDATE_USER_FAILED'})
-        console.log(err)
+    })
+}
+
+export const updateAvatar = ({id, avatar}) => dispatch => {
+    dispatch(updateAvatarDraw())
+    return axios.put(`http://localhost:3001/api/phonebook/${id}/avatar`, avatar, {
+        headers: {
+            'Content-Type': 'multipart/form-data'
+          }
+    }).then(({ data }) => {
+        dispatch({type: 'UPDATE_AVATAR_SUCCESS', id, avatar})
+    }).catch((err) => {
+        dispatch({type: 'UPDATE_AVATAR_FAILED'})
     })
 }

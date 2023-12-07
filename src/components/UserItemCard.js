@@ -1,12 +1,13 @@
 import './style.css'
 import { useDispatch } from 'react-redux'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { removeUser } from '../actions/users'
 import { updateUser } from '../actions/users'
+import { Link } from 'react-router-dom'
 
 
 function AvatarImage({ photos }) {
-    return <img src={photos == null ? `/usertie.png` : `/${photos}`} alt="logo" className="Avatar" />
+    return <img src={photos == null ? `/usertie.png` : `http://localhost:3001/images/${photos}`} alt="logo" className="Avatar" />
 }
 
 function ButtonEdit({ edit }) {
@@ -23,12 +24,16 @@ function ButtonSave({ save }) {
 
 export default function UserItemCard({user}){
     
-    const [userInput, setUserInput] = useState({name: user.name, phone: user.phone})
+    const [userInput, setUserInput] = useState({})
+
+    useEffect(() => {
+        setUserInput({name: user.name, phone: user.phone})
+    }, [user.name, user.phone])
+
     const [isEdit, setIsEdit] = useState(false)
 
     const dispatch = useDispatch()
 
-    
     const result = []
 
     if(isEdit){
@@ -36,7 +41,7 @@ export default function UserItemCard({user}){
             <>
                 <div className="itemContainer">
                     <div className='avatarContainer'>
-                        <AvatarImage photos={user.avatar} />
+                        <Link to="/avatar" ><AvatarImage photos={user.avatar} /></Link>
                     </div>
                     <div className='formContainer'>
                         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></link>
@@ -65,7 +70,7 @@ export default function UserItemCard({user}){
             <>
                 <div className="itemContainer">
                     <div className='avatarContainer'>
-                        <AvatarImage photos={user.avatar} />
+                    <Link to="/avatar" state={{user}}><AvatarImage photos={user.avatar}/></Link>
                     </div>
                     <div className='formContainer'>
                         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></link>
