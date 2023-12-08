@@ -13,9 +13,8 @@ function CancelButton() {
     return <a className='cancelButton'><i class="fa-solid fa-xmark"></i></a>
 }
 
-export default function Avatar({ props }) {
+export default function Avatar() {
     const location = useLocation();
-    console.log(location.state)
     const { user } = location.state;
     const dispatch = useDispatch()
     const navigate = useNavigate()

@@ -56,10 +56,10 @@ export const removeUser = (id) => dispatch => {
     })
 }
 
-export const updateUser = ({id, name, phone}) => dispatch => {
+export const updateUser = ({id, name, phone, avatar}) => dispatch => {
     dispatch(updateUserDraw())
-    return axios.put(`http://localhost:3001/api/phonebook/${id}`, {name, phone}).then(({ data }) => {
-        dispatch({type: 'UPDATE_USER_SUCCESS', id, name, phone})
+    return axios.put(`http://localhost:3001/api/phonebook/${id}`, {name, phone, avatar}).then(({ data }) => {
+        dispatch({type: 'UPDATE_USER_SUCCESS', id, name, phone, avatar})
     }).catch((err) => {
         dispatch({type: 'UPDATE_USER_FAILED'})
     })

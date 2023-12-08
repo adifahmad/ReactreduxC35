@@ -56,7 +56,8 @@ export default function UserItemCard({user}){
                                 <ButtonSave save={() => (dispatch(updateUser({ 
                                     id : user.id, 
                                     name : userInput.name,
-                                    phone : userInput.phone
+                                    phone : userInput.phone,
+                                    avatar : user.avatar
                                 })), (setIsEdit(false)))} />
                             </div>
                         </div>

@@ -10,7 +10,9 @@ const users = (state = [], action) => {
             return state.filter(item => item.id !== action.id)
 
         case 'UPDATE_USER_SUCCESS' :
-            return [...state.filter(data => data.id !== action.id), {id : action.id, name : action.name, phone : action.phone}]
+            const sortBy = [...state.filter(data => data.id !== action.id), {id : action.id, name : action.name, phone : action.phone, avatar : action.avatar}]
+            sortBy.sort((a, b) => b.id - a.id)
+            return sortBy
 
         case 'UPDATE_AVATAR_SUCCESS' :
             return [...state.filter(data => data.id !== action.id), {id : action.id, avatar : action.avatar}]
