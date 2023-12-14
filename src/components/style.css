@@ -34,6 +34,8 @@
 
 .searchContainer{
     text-align: center;
+    position: sticky;
+    top: 0;
 }
 
 .buttonSort, .buttonAdd{
