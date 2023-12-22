@@ -4,16 +4,18 @@ export const loadUserFailed = () => ({
     type: 'LOAD_USER_FAILED'
 })
 
-export const loadUserSuccess = (item) => ({
+export const loadUserSuccess = (data, page) => ({
     type: 'LOAD_USER_SUCCESS',
-    item
+    data, page
 })
 
-export const loadUser = ({keyword = "", sortBy = "id", sortMode = 'desc', page = 1}) => dispatch => axios.get('http://localhost:3001/api/phonebook', {params: {keyword, sortBy, sortMode, page}}).then(({ data }) => {        
-    dispatch(loadUserSuccess(data))
+export const loadUser = ({keyword, sortBy, sortMode, page}) => dispatch => axios.get('http://localhost:3001/api/phonebook', {params: {keyword, sortBy, sortMode, page}}).then(({ data }) => {      
+    dispatch(loadUserSuccess(data, page))
 }).catch((err) => {
     dispatch(loadUserFailed())
 })
+
+
 
 export const updateUserDraw = (allItem) => ({
     type: 'UPDATE_USER',
@@ -39,10 +41,10 @@ export const addUserDraw = (items) => ({
     items
 })
 
-export const addUser = ({name, phone}) => dispatch => {
-    dispatch(addUserDraw({name, phone}))
-    return axios.post('http://localhost:3001/api/phonebook', {name, phone}).then(({ data }) => {
-        dispatch(addUserSuccess({name, phone}))
+export const addUser = ({id, name, phone}) => dispatch => {
+    dispatch(addUserDraw({id, name, phone}))
+    return axios.post('http://localhost:3001/api/phonebook', {id, name, phone}).then(({ data }) => {
+        dispatch(addUserSuccess(data))
     }).catch((err) => {
         dispatch(addUserFailed())
     })
@@ -65,14 +67,14 @@ export const updateUser = ({id, name, phone, avatar}) => dispatch => {
     })
 }
 
-export const updateAvatar = ({id, avatar}) => dispatch => {
+export const updateAvatar = ({id, name, phone, avatar}) => dispatch => {
     dispatch(updateAvatarDraw())
     return axios.put(`http://localhost:3001/api/phonebook/${id}/avatar`, avatar, {
         headers: {
             'Content-Type': 'multipart/form-data'
           }
     }).then(({ data }) => {
-        dispatch({type: 'UPDATE_AVATAR_SUCCESS', id, avatar})
+        dispatch({type: 'UPDATE_AVATAR_SUCCESS', id, name, phone, avatar})
     }).catch((err) => {
         dispatch({type: 'UPDATE_AVATAR_FAILED'})
     })

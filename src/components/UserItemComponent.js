@@ -16,8 +16,7 @@ export default function UserItemComponent() {
     const dispatch = useDispatch()
 
     useEffect(() => {
-        console.log("page", page)
-        dispatch(loadUser({ keyword, sortMode, sortBy, page }))
+        dispatch(loadUser({ keyword, sortMode, sortBy, page}))
     }, [dispatch, keyword, sortMode, sortBy, page])
 
     useEffect(() => {
@@ -33,12 +32,11 @@ export default function UserItemComponent() {
         }, {
             passive: true
         });
-    }, [])
+    },[])
     
-    console.log("data",item)
     return (
         <>
-            <SearchBar props={setKeyword} filter={setSortMode} sortBy={setSortBy} />
+            <SearchBar setKeyword={setKeyword} setSortMode={setSortMode} setSortBy={setSortBy} setPage={setPage} />
             <div className="itemCardContainer">
                 {item.phonebook.map((user) => <UserItemCard key={user.id} user={user} />)}
             </div>

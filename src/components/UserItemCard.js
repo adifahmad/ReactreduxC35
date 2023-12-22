@@ -1,10 +1,28 @@
 import './style.css'
+import { confirmAlert } from 'react-confirm-alert';
+import 'react-confirm-alert/src/react-confirm-alert.css';
 import { useDispatch } from 'react-redux'
 import { useEffect, useState } from 'react'
 import { removeUser } from '../actions/users'
 import { updateUser } from '../actions/users'
 import { Link } from 'react-router-dom'
 
+const submit = (remove) => {
+    confirmAlert({
+      title: 'Konfirmasi untuk hapus',
+      message: 'Apakah anda yakin menghapus data ini?',
+      buttons: [
+        {
+          label: 'Ya',
+          onClick: () => remove()
+        },
+        {
+          label: 'Tidak',
+          onClick: () => <Link to='/'></Link>
+        }
+      ]
+    });
+  };
 
 function AvatarImage({ photos }) {
     return <img src={photos == null ? `/usertie.png` : `http://localhost:3001/images/${photos}`} alt="logo" className="Avatar" />
@@ -15,7 +33,7 @@ function ButtonEdit({ edit }) {
 }
 
 function ButtonDelete({ remove }) {
-    return <i class="fa-solid fa-trash" onClick={remove}></i>
+    return <i class="fa-solid fa-trash" onClick={() => submit(remove)}></i>
 }
 
 function ButtonSave({ save }) {
@@ -23,6 +41,8 @@ function ButtonSave({ save }) {
 }
 
 export default function UserItemCard({user}){
+
+   
     
     const [userInput, setUserInput] = useState({})
 
