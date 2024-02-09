@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# PhoneBook Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Step 1 : How To Run API Web
+
+First, you must activate the API server in order to run the data you want to display. Because this is an important component for the data to appear, you can also see it and a tutorial on how to turn it on with the following GitHub API link: https://github.com/adifahmad/APIPhonebookC35Sequalize
+
+# Step 2 : How to Starting Run Web React
+
+Next, you can run the React JS file with code as follows:
 
 ## Available Scripts
 
@@ -10,6 +16,10 @@ In the project directory, you can run:
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The Web View should appear as follows:
+
+[ photo ]
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
