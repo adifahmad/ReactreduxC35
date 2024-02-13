@@ -68,6 +68,10 @@ Here is a search on the phonebook web, for that you can also search the database
 
 Here's a look at how to sort by contact name you can also replace from top or bottom
 
+## Video Preview : 
+
+https://youtu.be/qxas2neHeJs
+
 
 # etc information
 
