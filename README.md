@@ -2,7 +2,9 @@
 
 # Step 1 : How To Run API Web
 
-First, you must activate the API server in order to run the data you want to display. Because this is an important component for the data to appear, you can also see it and a tutorial on how to turn it on with the following GitHub API link: https://github.com/adifahmad/APIPhonebookC35Sequalize
+First, you must activate the API server in order to run the data you want to display. Because this is an important component for the data to appear, you can also see it and a tutorial on how to turn it on with the following GitHub API link: https://github.com/adifahmad/APIPhonebookC35Sequalize. You can run the code as follows :
+
+### `npm run dev`
 
 # Step 2 : How to Starting Run Web React
 
@@ -14,17 +16,47 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Run the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The Web View should appear as follows:
 
-[ photo ]
+file:///home/adif/Pictures/Screenshots/Screenshot%20from%202024-02-10%2013-43-52.png
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+The page will reload when you make changes
+
+# Preview :
+
+Home Page
+
+file:///home/adif/Pictures/Screenshots/Screenshot%20from%202024-02-13%2018-26-02.png
+
+
+Add Page
+
+file:///home/adif/Pictures/Screenshots/Screenshot%20from%202024-02-13%2018-27-22.png
+
+Avatar Page
+
+file:///home/adif/Pictures/Screenshots/Screenshot%20from%202024-02-13%2018-28-06.png
+
+![Screenshot from 2024-02-13 18-28-13](https://github.com/adifahmad/ReactreduxC35/assets/52273664/bb9ffc63-0e99-4667-aa76-feb29d42a540)
+
+Search 
+
+file:///home/adif/Pictures/Screenshots/Screenshot%20from%202024-02-13%2018-27-44.png
+
+Sort
+
+file:///home/adif/Pictures/Screenshots/Screenshot%20from%202024-02-13%2018-26-33.png
+
+
+# Video Preview :
+
+[link]
+
+
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
