@@ -14,7 +14,7 @@ Next, you can run the React JS file with code as follows:
 
 In the project directory, you can run:
 
-### `npm start`
+### ``npm start``
 
 Run the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -40,16 +40,17 @@ The page will reload when you make changes
 
 ## Avatar Page
 
-![Screenshot from 2024-02-13 18-27-44](https://github.com/adifahmad/ReactreduxC35/assets/52273664/6c208456-a28c-4787-94f2-c2a761a37039)
 ![Screenshot from 2024-02-13 18-28-06](https://github.com/adifahmad/ReactreduxC35/assets/52273664/9b8101ae-3814-43b9-b453-5e9ce82e91ac)
 
 ![Screenshot from 2024-02-13 18-28-13](https://github.com/adifahmad/ReactreduxC35/assets/52273664/bb9ffc63-0e99-4667-aa76-feb29d42a540)
 
-Search 
+## Search 
 
-![Alt text](file:///home/adif/Pictures/Screenshots/Screenshot%20from%202024-02-13%2018-27-44.png)
+![Screenshot from 2024-02-13 18-27-44](https://github.com/adifahmad/ReactreduxC35/assets/52273664/6c208456-a28c-4787-94f2-c2a761a37039)
 
-Sort
+## Sort
+
+![Screenshot from 2024-02-13 18-28-33](https://github.com/adifahmad/ReactreduxC35/assets/52273664/3534d302-f757-4f13-91ea-90e73e31d96b)
 
 ![Screenshot from 2024-02-13 18-26-46](https://github.com/adifahmad/ReactreduxC35/assets/52273664/72cd9316-4aa3-4fad-8e33-264aa22f2ab3)
 
