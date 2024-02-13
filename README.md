@@ -70,7 +70,7 @@ Here's a look at how to sort by contact name you can also replace from top or bo
 
 ## Video Preview : 
 
-https://youtu.be/qxas2neHeJs
+![](https://youtu.be/qxas2neHeJs)
 
 
 # etc information
