@@ -34,7 +34,7 @@ The page will reload when you make changes
 
 ## Add Page
 
-![Screenshot from 2024-02-10 13-43-52](https://github.com/adifahmad/ReactreduxC35/assets/52273664/70f26c25-e001-42d8-844b-e0dd2de0943b)
+![Screenshot from 2024-02-13 18-27-22](https://github.com/adifahmad/ReactreduxC35/assets/52273664/bf09c449-1d24-4764-ab40-5d4c8b69ebfd)
 
 ## Avatar Page
 
