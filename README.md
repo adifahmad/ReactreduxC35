@@ -4,7 +4,7 @@
 
 First, you must activate the API server in order to run the data you want to display. Because this is an important component for the data to appear, you can also see it and a tutorial on how to turn it on with the following GitHub API link: https://github.com/adifahmad/APIPhonebookC35Sequalize. You can run the code as follows :
 
-### `npm run dev`
+`npm run dev`
 
 # Step 2 : How to Starting Run Web React
 
@@ -14,7 +14,7 @@ Next, you can run the React JS file with code as follows:
 
 In the project directory, you can run:
 
-### ``npm start``
+`npm start`
 
 Run the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -31,11 +31,17 @@ The page will reload when you make changes
 
 ![Screenshot from 2024-02-10 13-43-52](https://github.com/adifahmad/ReactreduxC35/assets/52273664/70f26c25-e001-42d8-844b-e0dd2de0943b)
 
+Here's the initial view of the web phonebook, here you can edit, delete and also add avatars
+
 ## Add Page
 
 ![Screenshot from 2024-02-13 18-27-22](https://github.com/adifahmad/ReactreduxC35/assets/52273664/bf09c449-1d24-4764-ab40-5d4c8b69ebfd)
 
+Here's the Add Profile view where you can add a new user in the initial view
+
 ![Screenshot from 2024-02-13 18-27-32](https://github.com/adifahmad/ReactreduxC35/assets/52273664/0c1649eb-428d-4169-aca2-27e3c939e365)
+
+Then, this is the view after adding a new user
 
 
 ## Avatar Page
