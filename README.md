@@ -36,6 +36,12 @@ The page will reload when you make changes
 
 ![Screenshot from 2024-02-13 18-27-22](https://github.com/adifahmad/ReactreduxC35/assets/52273664/bf09c449-1d24-4764-ab40-5d4c8b69ebfd)
 
+![Screenshot from 2024-02-13 18-26-46](https://github.com/adifahmad/ReactreduxC35/assets/52273664/72cd9316-4aa3-4fad-8e33-264aa22f2ab3)
+
+![Screenshot from 2024-02-13 18-27-32](https://github.com/adifahmad/ReactreduxC35/assets/52273664/0c1649eb-428d-4169-aca2-27e3c939e365)
+
+![Screenshot from 2024-02-13 18-27-32](https://github.com/adifahmad/ReactreduxC35/assets/52273664/78bb9e52-1851-436c-a018-b3db1895ff7c)
+
 ## Avatar Page
 
 ![Alt text](file:///home/adif/Pictures/Screenshots/Screenshot%20from%202024-02-13%2018-28-06.png)
