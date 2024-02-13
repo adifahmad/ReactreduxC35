@@ -30,8 +30,7 @@ The page will reload when you make changes
 
 Home Page
 
-![Alt text](file:///home/adif/Pictures/Screenshots/Screenshot%20from%202024-02-10%2013-43-52.png)
-
+![Screenshot from 2024-02-10 13-43-52](https://github.com/adifahmad/ReactreduxC35/assets/52273664/70f26c25-e001-42d8-844b-e0dd2de0943b)
 
 Add Page
 
