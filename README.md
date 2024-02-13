@@ -21,8 +21,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The Web View should appear as follows:
 
-file:///home/adif/Pictures/Screenshots/Screenshot%20from%202024-02-10%2013-43-52.png
-
+![Screenshot from 2024-02-10 13-43-52](https://github.com/adifahmad/ReactreduxC35/assets/52273664/70f26c25-e001-42d8-844b-e0dd2de0943b)
 
 The page will reload when you make changes
 
@@ -36,15 +35,13 @@ The page will reload when you make changes
 
 ![Screenshot from 2024-02-13 18-27-22](https://github.com/adifahmad/ReactreduxC35/assets/52273664/bf09c449-1d24-4764-ab40-5d4c8b69ebfd)
 
-![Screenshot from 2024-02-13 18-26-46](https://github.com/adifahmad/ReactreduxC35/assets/52273664/72cd9316-4aa3-4fad-8e33-264aa22f2ab3)
-
 ![Screenshot from 2024-02-13 18-27-32](https://github.com/adifahmad/ReactreduxC35/assets/52273664/0c1649eb-428d-4169-aca2-27e3c939e365)
 
-![Screenshot from 2024-02-13 18-27-32](https://github.com/adifahmad/ReactreduxC35/assets/52273664/78bb9e52-1851-436c-a018-b3db1895ff7c)
 
 ## Avatar Page
 
-![Alt text](file:///home/adif/Pictures/Screenshots/Screenshot%20from%202024-02-13%2018-28-06.png)
+![Screenshot from 2024-02-13 18-27-44](https://github.com/adifahmad/ReactreduxC35/assets/52273664/6c208456-a28c-4787-94f2-c2a761a37039)
+![Screenshot from 2024-02-13 18-28-06](https://github.com/adifahmad/ReactreduxC35/assets/52273664/9b8101ae-3814-43b9-b453-5e9ce82e91ac)
 
 ![Screenshot from 2024-02-13 18-28-13](https://github.com/adifahmad/ReactreduxC35/assets/52273664/bb9ffc63-0e99-4667-aa76-feb29d42a540)
 
@@ -54,7 +51,7 @@ Search
 
 Sort
 
-![Alt text](file:///home/adif/Pictures/Screenshots/Screenshot%20from%202024-02-13%2018-26-33.png)
+![Screenshot from 2024-02-13 18-26-46](https://github.com/adifahmad/ReactreduxC35/assets/52273664/72cd9316-4aa3-4fad-8e33-264aa22f2ab3)
 
 
 # Video Preview :
