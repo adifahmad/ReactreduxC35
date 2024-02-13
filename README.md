@@ -30,26 +30,26 @@ The page will reload when you make changes
 
 Home Page
 
-file:///home/adif/Pictures/Screenshots/Screenshot%20from%202024-02-13%2018-26-02.png
+![Alt text](file:///home/adif/Pictures/Screenshots/Screenshot%20from%202024-02-10%2013-43-52.png)
 
 
 Add Page
 
-file:///home/adif/Pictures/Screenshots/Screenshot%20from%202024-02-13%2018-27-22.png
+![Alt text](file:///home/adif/Pictures/Screenshots/Screenshot%20from%202024-02-13%2018-27-22.png)
 
 Avatar Page
 
-file:///home/adif/Pictures/Screenshots/Screenshot%20from%202024-02-13%2018-28-06.png
+![Alt text](file:///home/adif/Pictures/Screenshots/Screenshot%20from%202024-02-13%2018-28-06.png)
 
 ![Screenshot from 2024-02-13 18-28-13](https://github.com/adifahmad/ReactreduxC35/assets/52273664/bb9ffc63-0e99-4667-aa76-feb29d42a540)
 
 Search 
 
-file:///home/adif/Pictures/Screenshots/Screenshot%20from%202024-02-13%2018-27-44.png
+![Alt text](file:///home/adif/Pictures/Screenshots/Screenshot%20from%202024-02-13%2018-27-44.png)
 
 Sort
 
-file:///home/adif/Pictures/Screenshots/Screenshot%20from%202024-02-13%2018-26-33.png
+![Alt text](file:///home/adif/Pictures/Screenshots/Screenshot%20from%202024-02-13%2018-26-33.png)
 
 
 # Video Preview :
